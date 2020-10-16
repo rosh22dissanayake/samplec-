@@ -42,12 +42,20 @@ namespace project1
             double num4;
             num4 = Convert.ToDouble(number1);
 
-            double add;
+            
 
-            add = num1 + num2+ num3 + num4;
+          double  total = num1 + num2+ num3 + num4;
+            
+             String num = Console.ReadLine();
+            int number = Convert.ToInt32(num);
+            
+             total = total + number;
 
 
-            Console.WriteLine("Addition is "  + add);
+       double overall = total - total * 0.2 ;
+
+
+            Console.WriteLine("Total value is "  + overall);
             Console.ReadLine();
         }
     }
