@@ -10,7 +10,7 @@ namespace project1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("please enter your rent bill...");
+            Console.WriteLine("Start speed of stone...");
 
              
          string number1 = Console.ReadLine();
@@ -19,14 +19,14 @@ namespace project1
             double num1 = Convert.ToDouble(number1);
 
 
-            Console.WriteLine("please enter your average electricity...");
+            Console.WriteLine("Accelaration of stone...");
             
            string number2 = Console.ReadLine();
 
             
             double num2 = Convert.ToDouble(number2);
 
-            Console.WriteLine("please enter your telephone bill...");
+            Console.WriteLine("Time of stone between two places...");
 
             
            string number3 = Console.ReadLine();
@@ -34,25 +34,18 @@ namespace project1
             
             double num3 = Convert.ToDouble(number1);
 
-            Console.WriteLine("please enter your water bill...");
-
-            
-           string number4 = Console.ReadLine();
-
-         
-            double num4 = Convert.ToDouble(number1);
 
             
 
-          double  total = num1 + num2+ num3 + num4;
+          double  speed = num1 + num2*num3;
             
              String num = Console.ReadLine();
             int number = Convert.ToInt32(num);
             
-             total = total + number;
+             speed = speed + number;
 
 
-       double overall = total - total * 0.2 ;
+       double overall = speed - speed * 0.2 ;
 
 
             Console.WriteLine("Total value is "  + overall);
