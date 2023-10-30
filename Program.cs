@@ -10,45 +10,45 @@ namespace project1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Start speed of stone...");
+            Console.WriteLine("Speed of car...");
 
              
-         string number1 = Console.ReadLine();
+         string v1 = Console.ReadLine();
 
             
-            double num1 = Convert.ToDouble(number1);
+            double u1 = Convert.ToDouble(v1);
 
 
-            Console.WriteLine("Accelaration of stone...");
+            Console.WriteLine("Time between two places...");
             
-           string number2 = Console.ReadLine();
-
-            
-            double num2 = Convert.ToDouble(number2);
-
-            Console.WriteLine("Time of stone between two places...");
+           string v2 = Console.ReadLine();
 
             
-           string number3 = Console.ReadLine();
+            double u2 = Convert.ToDouble(v2);
+
+            Console.WriteLine("distance between two places...");
 
             
-            double num3 = Convert.ToDouble(number1);
+           string v3 = Console.ReadLine();
+
+            
+            double u3 = Convert.ToDouble(v3);
 
 
             
 
-          double  speed = num1 + num2*num3;
+          double  average = u1 + u2*u3;
             
              String num = Console.ReadLine();
             int number = Convert.ToInt32(num);
             
-             speed = speed + number;
+             average = average + number;
 
 
-       double overall = speed - speed * 0.2 ;
+       double total = average - average * 0.2 ;
 
 
-            Console.WriteLine("Total value is "  + overall);
+            Console.WriteLine("Total value is "  + total);
             Console.ReadLine();
         }
     }
