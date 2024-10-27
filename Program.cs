@@ -10,45 +10,35 @@ namespace project1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Speed of car...");
+            Console.WriteLine("Power of ball");
 
              
-         string v1 = Console.ReadLine();
+         string p1 = Console.ReadLine();
 
             
-            double u1 = Convert.ToDouble(v1);
+            double p = Convert.ToDouble(p1);
 
 
-            Console.WriteLine("Time between two places...");
+            Console.WriteLine("overall time of ball between two places");
             
-           string v2 = Console.ReadLine();
-
-            
-            double u2 = Convert.ToDouble(v2);
-
-            Console.WriteLine("distance between two places...");
+           string t1 = Console.ReadLine();
 
             
-           string v3 = Console.ReadLine();
+            double t = Convert.ToDouble(t1);
 
             
-            double u3 = Convert.ToDouble(v3);
-
-
+          double  energy = p*t;
             
-
-          double  average = u1 + u2*u3;
+             String num1 = Console.ReadLine();
+            int number = Convert.ToInt32(num1);
             
-             String num = Console.ReadLine();
-            int number = Convert.ToInt32(num);
-            
-             average = average + number;
+             energy = energy + number;
 
 
-       double total = average - average * 0.2 ;
+       double result = energy - energy * 0.5 ;
 
 
-            Console.WriteLine("Total value is "  + total);
+            Console.WriteLine("Total value is "  + result);
             Console.ReadLine();
         }
     }
